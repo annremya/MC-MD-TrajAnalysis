@@ -1,0 +1,14 @@
+set term postscript eps color enhanced 'Arial, 23' solid linewidth 2 #Arial 30
+set ylabel 'P(n)' font 'Arial, 22.5'
+set xlabel 'n' font 'Arial, 22.5'
+#set xrange[0:30]
+#set yrange[0:5]
+
+set output 'clust.eps'
+p 'size_dist_prod.dat' u 1:2 w lp lt rgb 'black' t ''
+
+
+set xrange[0:30]
+
+set output 'clust1.eps'
+p 'size_dist_prod.dat' u 1:2 w lp lt rgb 'black' t ''
